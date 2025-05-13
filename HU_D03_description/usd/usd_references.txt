@@ -1,0 +1,13 @@
+# usd文件引用关系
+##  A -> B -> C: A引用B,B引用C
+
+# HU_D03_02.usd
+HU_D03_02.usd -> configuration/HU_D03_02_sensor.usd -> configuration/HU_D03_02_physics.usd -> configuration/HU_D03_02_base.usd
+
+# HU_D03_01.usd
+HU_D03_01.usd -> configuration/HU_D03_01_sensor.usd -> configuration/HU_D03_01_physics.usd -> configuration/HU_D03_01_base.usd
+
+# HU_D03_01_shortheel.usd
+HU_D03_01_shortheel.usd -> configuration/HU_D03_01_shortheel_sensor.usd -> configuration/HU_D03_01_shortheel_physics.usd -> configuration/HU_D03_01_shortheel_base.usd
+
+

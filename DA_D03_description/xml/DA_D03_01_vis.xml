@@ -41,7 +41,7 @@
       <mesh name="right_wrist_pitch_link" file="right_hand_pitch_link.STL"/>
       <mesh name="right_wrist_roll_link" file="right_hand_roll_link.STL"/>
       
-      <mesh name="neck_yaw_link" file="neck_yaw_link.STL"/>
+      <mesh name="head_yaw_link" file="neck_yaw_link.STL"/>
       <mesh name="neck_pitch_link" file="neck_pitch_link.STL"/>
     </asset>
     
@@ -58,10 +58,10 @@
       <geom pos="0 0 1.0" type="mesh" class="visual" rgba="1 1 1 1" mesh="base_link"/>
       
       <!-- head -->
-      <body name="neck_yaw_link" pos="-0.013 0 1.5027">
+      <body name="head_yaw_link" pos="-0.013 0 1.5027">
         <inertial pos="0.00011 0.00253 0.04305" quat="0.721861 0.691331 -0.0201222 0.0239363" mass="0.46" diaginertia="0.000233962 0.000213101 0.000190887"/>
         <joint name="neck_yaw_joint" pos="0 0 0" axis="0 0 1" limited="true" range="-0.7854 0.7854"/>
-        <geom type="mesh" rgba="0.898039 0.917647 0.929412 1" mesh="neck_yaw_link"/>
+        <geom type="mesh" rgba="0.898039 0.917647 0.929412 1" mesh="head_yaw_link"/>
        
         <body name="neck_pitch_link" pos="0 0.0282 0.045">
           <inertial pos="0.00081 0.00138 0.07215" quat="0.00265078 0.773858 0.0220122 0.632971" mass="0.45" diaginertia="0.00341778 0.0024621 0.00216008"/>

@@ -85,7 +85,7 @@
           <!-- upper body -->
           <body name="waist_pitch_link" pos="0 0 0">
             <inertial pos="-0.01035 0.00053 0.2017" quat="0.998415 -0.00424414 -0.0561196 -1.43367e-05" mass="10.96" diaginertia="0.169612 0.132956 0.0890119"/>
-            <joint name="waist_pitch_joint" pos="0 0 0" axis="0 1 0" limited="true" range="-0.523599 0.785398"/>
+            <joint name="waist_pitch_joint" pos="0 0 0" axis="0 1 0" limited="true" range="-0.523599 0.523599"/>
             <geom type="mesh" class="visual" rgba="0.898039 0.921569 0.929412 1" mesh="waist_pitch_link"/>
 
             <!-- head -->

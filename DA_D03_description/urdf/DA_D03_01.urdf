@@ -658,7 +658,7 @@
       velocity="15" />
   </joint>
   
-  <link name="neck_yaw_link">
+  <link name="head_yaw_link">
     <inertial>
       <origin
         xyz="0.00009 0.00313 0.04319"
@@ -706,7 +706,7 @@
     <parent
       link="base_link" />
     <child
-      link="neck_yaw_link" />
+      link="head_yaw_link" />
     <axis
       xyz="0 0 1" />
     <limit
@@ -762,7 +762,7 @@
       xyz="0 0.0282 0.045"
       rpy="0 0 0" />
     <parent
-      link="neck_yaw_link" />
+      link="head_yaw_link" />
     <child
       link="neck_pitch_link" />
     <axis

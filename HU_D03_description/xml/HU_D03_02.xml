@@ -121,7 +121,7 @@
 
               <body name="left_ankle_pitch_link" pos="0 0.00139822 -0.385">
                 <inertial pos="0.00015 0 0.00047" quat="0.500895 0.500895 -0.499103 0.499103" mass="0.1" diaginertia="2.208e-05 1.929e-05 6.94e-06"/>
-                <joint name="left_ankle_pitch_joint" pos="0 0 0" axis="0 1 0" limited="true" range="-0.610865 0.942478"/>
+                <joint name="left_ankle_pitch_joint" pos="0 0 0" axis="0 1 0" limited="true" range="-0.785 0.611"/>
                 <geom type="mesh" class="visual" rgba="0.776471 0.756863 0.737255 1" mesh="left_ankle_pitch_link"/>
 
                 <body name="left_ankle_roll_link" pos="0 0 0">
@@ -199,7 +199,7 @@
 
               <body name="right_ankle_pitch_link" pos="0 -0.00139822 -0.385">
                 <inertial pos="0.00015 0 0.00047" quat="0.500895 0.500895 -0.499103 0.499103" mass="0.1" diaginertia="2.208e-05 1.929e-05 6.94e-06"/>
-                <joint name="right_ankle_pitch_joint" pos="0 0 0" axis="0 1 0" limited="true" range="-0.610865 0.942478"/>
+                <joint name="right_ankle_pitch_joint" pos="0 0 0" axis="0 1 0" limited="true" range="-0.785 0.611"/>
                 <geom type="mesh" class="visual" rgba="0.776471 0.756863 0.737255 1" mesh="right_ankle_pitch_link"/>
                 <body name="right_ankle_roll_link" pos="0 0 0">
                   <inertial pos="-0.00717 0 -0.03509" quat="-7.05711e-06 0.729198 -1.68052e-06 0.684303" mass="0.88" diaginertia="0.00326308 0.00315827 0.000660841"/>
@@ -262,7 +262,7 @@
           <!-- upper body -->
           <body name="waist_pitch_link" pos="0 0 0">
             <inertial pos="-0.01035 0.00053 0.2017" quat="0.998415 -0.00424414 -0.0561196 -1.43367e-05" mass="10.96" diaginertia="0.169612 0.132956 0.0890119"/>
-            <joint name="waist_pitch_joint" pos="0 0 0" axis="0 1 0" limited="true" range="-0.523599 0.785398"/>
+            <joint name="waist_pitch_joint" pos="0 0 0" axis="0 1 0" limited="true" range="-0.523599 0.523599"/>
             <geom type="mesh" class="visual" rgba="0.898039 0.921569 0.929412 1" mesh="waist_pitch_link"/>
             <!-- <geom type="capsule" pos="-0.01 0 0.23" size="0.1 0.08" euler="1.57 0 0" />
             <geom type="capsule" pos="-0.03 0 0.07" size="0.06 0.06" euler="1.57 0 0" />

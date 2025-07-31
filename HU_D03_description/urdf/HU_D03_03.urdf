@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
-     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
-     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
   name="HU_D03_03">
   
@@ -17,7 +14,6 @@
     <parent link="root_link" />
     <child link="base_link" />
   </joint> -->
-
 
   <link
     name="base_link">
@@ -2066,4 +2062,34 @@
       effort="18"
       velocity="14" />
   </joint>
+
+
+  <!-- Camera -->
+  <joint name="waist_camera_joint" type="fixed">
+      <origin rpy="0.0 0.611 0.0" xyz="0.092 0.0175 0.2751"/>
+      <parent link="waist_pitch_link"/>
+      <child link="waist_camera_link"/>
+    </joint>
+  <link name="waist_camera_link">
+    <visual>
+        <origin rpy="1.5707963267948966 0 1.5707963267948966" xyz="0.0149 -0.0175 0"/>
+        <geometry>
+            <mesh filename="package://HU_D03_description/meshes/HU_D03_03/d435.dae"/>
+        </geometry>
+    </visual>
+  </link>
+
+    <joint name="head_camera_joint" type="fixed">
+      <origin rpy="0.0 0.0 0.0" xyz="0.07453 0.0175 0.065"/>
+      <parent link="head_pitch_link"/>
+      <child link="head_camera_link"/>
+    </joint>
+  <link name="head_camera_link">
+    <visual>
+        <origin rpy="1.5707963267948966 0 1.5707963267948966" xyz="0.0149 -0.0175 0"/>
+        <geometry>
+            <mesh filename="package://HU_D03_description/meshes/HU_D03_03/d435.dae"/>
+        </geometry>
+    </visual>
+  </link>
 </robot>

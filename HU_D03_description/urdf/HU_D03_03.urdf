@@ -2066,30 +2066,31 @@
 
   <!-- Camera -->
   <joint name="waist_camera_joint" type="fixed">
-      <origin rpy="0.0 0.611 0.0" xyz="0.092 0.0175 0.2751"/>
-      <parent link="waist_pitch_link"/>
-      <child link="waist_camera_link"/>
-    </joint>
+    <origin rpy="0.0 2.1818 0.0" xyz="0.092 0.0175 0.2751"/>
+    <parent link="waist_pitch_link"/>
+    <child link="waist_camera_link"/>
+  </joint>
   <link name="waist_camera_link">
     <visual>
-        <origin rpy="1.5707963267948966 0 1.5707963267948966" xyz="0.0149 -0.0175 0"/>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-            <mesh filename="package://HU_D03_description/meshes/HU_D03_03/d435.dae"/>
+            <mesh filename="package://HU_D03_description/meshes/HU_D03_03/d435_link.STL"/>
         </geometry>
     </visual>
   </link>
 
-    <joint name="head_camera_joint" type="fixed">
-      <origin rpy="0.0 0.0 0.0" xyz="0.07453 0.0175 0.065"/>
-      <parent link="head_pitch_link"/>
-      <child link="head_camera_link"/>
-    </joint>
+  <joint name="head_camera_joint" type="fixed">
+    <origin rpy="0.0 1.5708 0.0" xyz="0.07453 0.0175 0.065"/>
+    <parent link="head_pitch_link"/>
+    <child link="head_camera_link"/>
+  </joint>
   <link name="head_camera_link">
     <visual>
-        <origin rpy="1.5707963267948966 0 1.5707963267948966" xyz="0.0149 -0.0175 0"/>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-            <mesh filename="package://HU_D03_description/meshes/HU_D03_03/d435.dae"/>
+            <mesh filename="package://HU_D03_description/meshes/HU_D03_03/d435_link.STL"/>
         </geometry>
     </visual>
   </link>
+
 </robot>

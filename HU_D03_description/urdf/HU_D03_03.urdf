@@ -349,17 +349,17 @@
     name="left_ankle_roll_link">
     <inertial>
       <origin
-        xyz="0.00621763 -9.55E-05 -0.03230499"
+        xyz="13.29E-03 0.0 -37.04E-03"
         rpy="0 0 0" />
       <mass
-        value="1.049" />
+        value="1.25" />
       <inertia
-        ixx="0.00080898"
-        ixy="1.51E-06"
-        ixz="0.00040865"
-        iyy="0.00348315"
-        iyz="-1.05E-06"
-        izz="0.0035697" />
+        ixx="910662E-09"
+        ixy="-132E-09"
+        ixz="436169E-09"
+        iyy="5168345E-09"
+        iyz="-28E-09"
+        izz="5419687E-09" />
     </inertial>
     <visual>
       <origin
@@ -456,7 +456,7 @@
   </link>
 
   <joint name="contact_foot_tip_joint_L" type="fixed">
-    <origin xyz="0.144 0 -0.0625" rpy="0 0 0" />
+    <origin xyz="0.154 0 -0.0625" rpy="0 0 0" />
     <parent link="left_ankle_roll_link" />
     <child link="contact_foot_tip_L" />
   </joint>
@@ -771,17 +771,17 @@
     name="right_ankle_roll_link">
     <inertial>
       <origin
-        xyz="0.00621763 -9.552E-05 -0.03230499"
+        xyz="13.29E-03 0.0 -37.04E-03"
         rpy="0 0 0" />
       <mass
-        value="1.049" />
+        value="1.25" />
       <inertia
-        ixx="0.00080898"
-        ixy="1.51E-06"
-        ixz="0.00040865"
-        iyy="0.00348315"
-        iyz="-1.05E-06"
-        izz="0.0035697" />
+        ixx="910662E-09"
+        ixy="-132E-09"
+        ixz="436169E-09"
+        iyy="5168345E-09"
+        iyz="-28E-09"
+        izz="5419687E-09" />
     </inertial>
     <visual>
       <origin
@@ -878,7 +878,7 @@
   </link>
 
   <joint name="contact_foot_tip_joint_R" type="fixed">
-    <origin xyz="0.144 0 -0.0625" rpy="0 0 0" />
+    <origin xyz="0.154 0 -0.0625" rpy="0 0 0" />
     <parent link="right_ankle_roll_link" />
     <child link="contact_foot_tip_R" />
   </joint>

@@ -58,7 +58,7 @@
   <link name="left_hip_pitch_link">
     <inertial>
       <origin
-        xyz="0.0019 0.008786 -0.089389"
+        xyz="0.0019 0.001536 -0.086008"
         rpy="0 0 0" />
       <mass
         value="2.255011" />
@@ -97,7 +97,7 @@
   <joint name="left_hip_pitch_joint"
     type="revolute">
     <origin
-      xyz="0.017007 0.1211 0.011573"
+      xyz="0.017007 0.1283 0.0081917"
       rpy="0 0 0" />
     <parent
       link="base_link" />
@@ -153,7 +153,7 @@
   <joint name="left_hip_roll_joint"
     type="revolute">
     <origin
-      xyz="-0.01 0.0089101 -0.095423"
+      xyz="-0.01 0.0016596 -0.0920417"
       rpy="0 0 0" />
     <parent
       link="left_hip_pitch_link" />
@@ -468,7 +468,7 @@
   <link name="right_hip_pitch_link">
     <inertial>
       <origin
-        xyz="0.0019 -0.008786 -0.089389"
+        xyz="0.0019 -0.001536 -0.086008"
         rpy="0 0 0" />
       <mass
         value="2.253993" />
@@ -507,7 +507,7 @@
   <joint name="right_hip_pitch_joint"
     type="revolute">
     <origin
-      xyz="0.017007 -0.1211 0.011573"
+      xyz="0.017007 -0.1283 0.0081917"
       rpy="0 0 0" />
     <parent
       link="base_link" />
@@ -563,7 +563,7 @@
   <joint name="right_hip_roll_joint"
     type="revolute">
     <origin
-      xyz="-0.01 -0.0089101 -0.095423"
+      xyz="-0.01 -0.0016596 -0.0920417"
       rpy="0 0 0" />
     <parent
       link="right_hip_pitch_link" />
@@ -917,7 +917,7 @@
   <joint name="waist_yaw_joint"
     type="revolute">
     <origin
-      xyz="0.0070074 0 0.10215"
+      xyz="0 0 0.10239"
       rpy="0 0 0" />
     <parent
       link="base_link" />

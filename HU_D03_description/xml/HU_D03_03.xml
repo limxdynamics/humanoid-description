@@ -124,7 +124,7 @@
                   <inertial pos="0.0132965 0 -0.037101" quat="-5.76828e-05 0.739862 -4.13547e-05 0.672759" mass="1.253" diaginertia="0.00549574 0.00520479 0.000871351"/>
                   <joint name="left_ankle_roll_joint" pos="0 0 0" axis="1 0 0" limited="true" range="-0.436 0.436"/>
                   <geom type="mesh" class="visual" rgba="1 1 1 1" mesh="left_ankle_roll_link"/>
-                  <geom name="left_foot"  pos="0.018 0 -0.0535" size="0.125 0.047 0.01" type="box" rgba="0 0.4 0 0.1" />
+                  <geom name="left_foot"  pos="0.018 0 -0.0535" size="0.13 0.047 0.01" type="box" rgba="0 0.4 0 0.1" />
 
                   <body name="contact_left_heel" pos="-0.106 0 -0.0625">
                     <inertial pos="0.0 0.0 0.0" quat="1 0 0 0" mass="0.00001" diaginertia="0.00000000001 0.00000000001 0.00000000001"/>
@@ -194,7 +194,7 @@
                   <inertial pos="0.0132965 0 -0.037101" quat="-5.76828e-05 0.739862 -4.13547e-05 0.672759" mass="1.253" diaginertia="0.00549574 0.00520479 0.000871351"/>
                   <joint name="right_ankle_roll_joint" pos="0 0 0" axis="1 0 0" limited="true" range="-0.436 0.436"/>
                   <geom type="mesh" class="visual" rgba="1 1 1 1" mesh="right_ankle_roll_link"/>
-                  <geom name="right_foot"  pos="0.018 0 -0.0535" size="0.125 0.047 0.01" type="box" rgba="0 0.4 0 0.1" />
+                  <geom name="right_foot"  pos="0.018 0 -0.0535" size="0.13 0.047 0.01" type="box" rgba="0 0.4 0 0.1" />
 
                   <body name="contact_right_heel" pos="-0.106 0 -0.0625">
                     <inertial pos="0.0 0.0 0.0" quat="1 0 0 0" mass="0.00001" diaginertia="0.00000000001 0.00000000001 0.00000000001"/>

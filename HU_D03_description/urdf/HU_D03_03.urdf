@@ -1510,6 +1510,35 @@
     </visual>
   </link>
 
+  <!-- Left hand For Manipulation -->
+  <joint name="left_hand_manip_joint" type="fixed">
+    <origin xyz="0 0 0.0" rpy="0 1.5708 0" />
+    <parent link="left_hand_yaw_link" />
+    <child link="left_hand_manip" />
+  </joint>
+  <link name="left_hand_manip">
+    <inertial>
+      <origin xyz=".0 .0 .0" rpy="0 0 0" />
+      <mass value="0.001" />
+      <inertia 
+        ixx="0.0000001" 
+        ixy="0.0" 
+        ixz="0.0" 
+        iyy="0.0000001" 
+        iyz="0.0" 
+        izz="0.0000001" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="">
+        <color rgba="1 0 0 1" />
+      </material>
+    </visual>
+  </link>
+
   <link
     name="right_shoulder_pitch_link">
     <inertial>
@@ -1924,6 +1953,35 @@
     <child link="right_hand_contact" />
   </joint>
   <link name="right_hand_contact">
+    <inertial>
+      <origin xyz=".0 .0 .0" rpy="0 0 0" />
+      <mass value="0.001" />
+      <inertia 
+        ixx="0.0000001" 
+        ixy="0.0" 
+        ixz="0.0" 
+        iyy="0.0000001" 
+        iyz="0.0" 
+        izz="0.0000001" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="">
+        <color rgba="1 0 0 1" />
+      </material>
+    </visual>
+  </link>
+
+  <!-- Right hand For Manipulation -->
+  <joint name="right_hand_manip_joint" type="fixed">
+    <origin xyz="0 0 0.0" rpy="0 1.5708 0" />
+    <parent link="right_hand_yaw_link" />
+    <child link="right_hand_manip" />
+  </joint>
+  <link name="right_hand_manip">
     <inertial>
       <origin xyz=".0 .0 .0" rpy="0 0 0" />
       <mass value="0.001" />

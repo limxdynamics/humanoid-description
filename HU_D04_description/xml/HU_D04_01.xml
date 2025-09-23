@@ -299,7 +299,7 @@
                   <geom type="mesh" class="visual" rgba="0.75294 0.75294 0.75294 1" mesh="left_shoulder_yaw_link"/>
                   <body name="left_elbow_link" pos="0 0 -0.1157">
                     <inertial pos="5.7e-05 0.004497 -0.027441" quat="0.66133 -0.0245278 0.0213656 0.74939" mass="1.27546" diaginertia="0.00288485 0.00285163 0.000879522"/>
-                    <joint name="left_elbow_joint" pos="0 0 0" axis="0 1 0" limited="true" range="-2.443 1.187" armature="0.0886706"/>
+                    <joint name="left_elbow_joint" pos="0 0 0" axis="0 1 0" limited="true" range="-2.443 1.571" armature="0.0886706"/>
                     <geom type="mesh" class="visual" rgba="0.75294 0.75294 0.75294 1" mesh="left_elbow_link"/>
                     <geom type="cylinder" pos="0 0 0" size="0.0425 0.04" euler="1.57 0  0" />
                     <geom type="cylinder" pos="0 0 -0.082" size="0.0375 0.025" euler="0 0 0" />
@@ -350,7 +350,7 @@
                   <geom type="mesh" class="visual" rgba="0.75294 0.75294 0.75294 1" mesh="right_shoulder_yaw_link"/>
                   <body name="right_elbow_link" pos="0 0 -0.1157">
                     <inertial pos="5.7e-05 -0.004497 -0.027441" quat="0.74939 0.0213656 -0.0245278 0.66133" mass="1.27546" diaginertia="0.00288485 0.00285163 0.000879522"/>
-                    <joint name="right_elbow_joint" pos="0 0 0" axis="0 1 0" limited="true" range="-2.443 1.187" armature="0.0886706"/>  
+                    <joint name="right_elbow_joint" pos="0 0 0" axis="0 1 0" limited="true" range="-2.443 1.571" armature="0.0886706"/>  
                     <geom type="mesh" class="visual" rgba="0.75294 0.75294 0.75294 1" mesh="right_elbow_link"/>
                     <geom type="cylinder" pos="0 0 0" size="0.0425 0.04" euler="1.57 0  0" />
                     <geom type="cylinder" pos="0 0 -0.082" size="0.0375 0.025" euler="0 0 0" />

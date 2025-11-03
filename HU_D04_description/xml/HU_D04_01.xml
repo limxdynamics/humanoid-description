@@ -120,17 +120,17 @@
                   <geom type="mesh" class="visual" rgba="0.75294 0.75294 0.75294 1" mesh="left_ankle_roll_link"/>
                   <geom name="left_foot"  pos="0.018 0 -0.0535" size="0.13 0.047 0.01" type="box" rgba="0 0.4 0 0.1" />
 
-                  <body name="contact_left_heel" pos="-0.106 0 -0.0625">
+                  <body name="contact_foot_heel_L" pos="-0.106 0 -0.0625">
                     <inertial pos="0.0 0.0 0.0" quat="1 0 0 0" mass="0.00001" diaginertia="0.00000000001 0.00000000001 0.00000000001"/>
-                    <geom name="contact_left_heel" class="visual" size="0.003" type="sphere" rgba="1 0 0 1"/>
+                    <geom name="contact_foot_heel_L" class="visual" size="0.003" type="sphere" rgba="1 0 0 1"/>
                   </body>
-                  <body name="contact_left_center" pos="0.0 0 -0.0625">
+                  <body name="contact_foot_center_L" pos="0.0 0 -0.0625">
                     <inertial pos="0.0 0.0 0.0" quat="1 0 0 0" mass="0.00001" diaginertia="0.00000000001 0.00000000001 0.00000000001"/>
-                    <geom name="contact_left_center" class="visual" size="0.003" type="sphere" rgba="1 0 0 1"/>
+                    <geom name="contact_foot_center_L" class="visual" size="0.003" type="sphere" rgba="1 0 0 1"/>
                   </body>
-                  <body name="contact_left_tip" pos="0.154 0 -0.0625">
+                  <body name="contact_foot_tip_L" pos="0.154 0 -0.0625">
                     <inertial pos="0.0 0.0 0.0" quat="1 0 0 0" mass="0.00001" diaginertia="0.00000000001 0.00000000001 0.00000000001"/>
-                    <geom name="contact_left_tip" class="visual" size="0.003" type="sphere" rgba="1 0 0 1"/>
+                    <geom name="contact_foot_tip_L" class="visual" size="0.003" type="sphere" rgba="1 0 0 1"/>
                   </body>
 
                 </body>
@@ -190,17 +190,17 @@
                   <geom type="mesh" class="visual" rgba="0.75294 0.75294 0.75294 1" mesh="right_ankle_roll_link"/>
                   <geom name="right_foot"  pos="0.018 0 -0.0535" size="0.13 0.047 0.01" type="box" rgba="0 0.4 0 0.1" />
 
-                  <body name="contact_right_heel" pos="-0.106 0 -0.0625">
+                  <body name="contact_foot_heel_R" pos="-0.106 0 -0.0625">
                     <inertial pos="0.0 0.0 0.0" quat="1 0 0 0" mass="0.00001" diaginertia="0.00000000001 0.00000000001 0.00000000001"/>
-                    <geom name="contact_right_heel" class="visual" size="0.003" type="sphere" rgba="1 0 0 1"/>
+                    <geom name="contact_foot_heel_R" class="visual" size="0.003" type="sphere" rgba="1 0 0 1"/>
                   </body>
-                  <body name="contact_right_center" pos="0.0 0 -0.0625">
+                  <body name="contact_foot_center_R" pos="0.0 0 -0.0625">
                     <inertial pos="0.0 0.0 0.0" quat="1 0 0 0" mass="0.00001" diaginertia="0.00000000001 0.00000000001 0.00000000001"/>
-                    <geom name="contact_right_center" class="visual" size="0.003" type="sphere" rgba="1 0 0 1"/>
+                    <geom name="contact_foot_center_R" class="visual" size="0.003" type="sphere" rgba="1 0 0 1"/>
                   </body>
-                  <body name="contact_right_tip" pos="0.154 0 -0.0625">
+                  <body name="contact_foot_tip_R" pos="0.154 0 -0.0625">
                     <inertial pos="0.0 0.0 0.0" quat="1 0 0 0" mass="0.00001" diaginertia="0.00000000001 0.00000000001 0.00000000001"/>
-                    <geom name="contact_right_tip" class="visual" size="0.003" type="sphere" rgba="1 0 0 1"/>
+                    <geom name="contact_foot_tip_R" class="visual" size="0.003" type="sphere" rgba="1 0 0 1"/>
                   </body>
 
                 </body>
@@ -321,9 +321,13 @@
                           <geom type="mesh" rgba="0.75294 0.75294 0.75294 1" mesh="left_wrist_roll_link"/>
                           <!-- <geom type="box" pos="0 0 -0.04226" size="0.01 0.02 0.0275" euler="0 0 0" />
                           <geom type="box" pos="0 0 -0.116" size="0.01 0.05 0.03" euler="0 0 0" /> -->
-                          <body name="contact_left_hand" pos="0.0 0 -0.058">
+                          <body name="left_hand_contact" pos="0.0 0 -0.058">
                             <inertial pos="0.0 0.0 0.0" quat="1 0 0 0" mass="0.00001" diaginertia="0.00000000001 0.00000000001 0.00000000001"/>
-                            <geom name="contact_left_hand" class="visual" size="0.003" type="sphere" rgba="1 0 0 1"/>
+                            <geom name="left_hand_contact" class="visual" size="0.003" type="sphere" rgba="1 0 0 1"/>
+                          </body>
+                          <body name="left_hand_manip" pos="0 0 -0.058" quat="0.707107, 0, 0.707107, 0">
+                            <inertial pos="0.0 0.0 0.0" quat="1 0 0 0" mass="0.00001" diaginertia="0.00000000001 0.00000000001 0.00000000001"/>
+                            <geom name="left_hand_manip" class="visual" size="0.003" type="sphere" rgba="1 0 0 1"/>
                           </body>
                         </body>
                       </body>
@@ -372,9 +376,13 @@
                           <geom type="mesh" rgba="0.75294 0.75294 0.75294 1" mesh="right_wrist_roll_link"/>
                           <!-- <geom type="box" pos="0 0 -0.04226" size="0.01 0.02 0.0275" euler="0 0 0" />
                           <geom type="box" pos="0 0 -0.116" size="0.01 0.05 0.03" euler="0 0 0" /> -->
-                          <body name="contact_right_hand" pos="0.0 0 -0.058">
+                          <body name="right_hand_contact" pos="0.0 0 -0.058">
                             <inertial pos="0.0 0.0 0.0" quat="1 0 0 0" mass="0.00001" diaginertia="0.00000000001 0.00000000001 0.00000000001"/>
-                            <geom name="contact_right_hand" class="visual" size="0.003" type="sphere" rgba="1 0 0 1"/>
+                            <geom name="right_hand_contact" class="visual" size="0.003" type="sphere" rgba="1 0 0 1"/>
+                          </body>
+                          <body name="right_hand_manip" pos="0 0 -0.058" quat="0.707107, 0, 0.707107, 0">
+                            <inertial pos="0.0 0.0 0.0" quat="1 0 0 0" mass="0.00001" diaginertia="0.00000000001 0.00000000001 0.00000000001"/>
+                            <geom name="right_hand_manip" class="visual" size="0.003" type="sphere" rgba="1 0 0 1"/>
                           </body>
                         </body>
                       </body>

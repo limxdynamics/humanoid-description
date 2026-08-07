@@ -15,19 +15,19 @@ URDF, MuJoCo MJCF & USD models for LimX Dynamics full-size humanoid robots (HU_D
 
 ## Directory structure
 
-humanoid-description/
-├── HU_D03_description/
-│   ├── urdf/            # URDF + SRDF (joint specs: rotor inertia, gear ratio)
-│   ├── xml/             # MuJoCo MJCF XML
-│   ├── usd/             # NVIDIA USD (Isaac Sim) + configuration/
-│   ├── meshes/          # STL mesh files
-│   ├── world/           # Simulation world files
-│   ├── CMakeLists.txt   # ROS package build
-│   └── package.xml      # ROS package manifest
-├── HU_D04_description/
-│   └── (same structure, with gripper/hand URDF & USD variants)
-└── LICENSE              # Apache License 2.0
+Each model directory (`HU_D03_description/`, `HU_D04_description/`) contains:
 
+| Directory | Contents |
+|-----------|----------|
+| `urdf/` | URDF + SRDF (joint specs: rotor inertia, gear ratio) |
+| `xml/` | MuJoCo MJCF XML |
+| `usd/` | NVIDIA USD files + `configuration/` subdirectory |
+| `meshes/` | STL mesh files |
+| `world/` | Simulation world files |
+| `CMakeLists.txt` | ROS package build file |
+| `package.xml` | ROS package manifest |
+
+HU_D04 additionally includes gripper and dexterous hand variants in `urdf/` and `usd/`.
 
 
 ## Quick start

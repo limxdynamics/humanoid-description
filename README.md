@@ -1,3 +1,5 @@
+# English | [中文](README_cn.md)
+
 # LimX Humanoid Robot Description
 
 URDF, MuJoCo MJCF & USD models for LimX Dynamics full-size humanoid robots (HU_D03, HU_D04). Provides simulation-ready robot descriptions for ROS, MuJoCo, and NVIDIA Isaac Sim.

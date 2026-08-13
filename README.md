@@ -8,12 +8,14 @@ URDF, MuJoCo MJCF & USD models for LimX Dynamics full-size humanoid robots (HU_D
 
 | Model                       | Description                        | URDF                          | MuJoCo MJCF     | USD                          |
 | --------------------------- | ---------------------------------- | ----------------------------- | --------------- | ---------------------------- |
-| **HU_D03**                  | Humanoid base model                | `HU_D03_03.urdf`              | `HU_D03_03.xml` | `HU_D03_03.usd`              |
+| **HU_D03** (discontinued)   | Humanoid base model                | `HU_D03_03.urdf`              | `HU_D03_03.xml` | `HU_D03_03.usd`              |
 | **HU_D04**                  | Humanoid with end-effector options | `HU_D04_01.urdf`              | `HU_D04_01.xml` | `HU_D04_01.usd`              |
 | **HU_D04 + Gripper**        | HU_D04 with gripper                | `HU_D04_01_with_gripper.urdf` | —               | `HU_D04_01_with_gripper.usd` |
 | **HU_D04 + Dexterous Hand** | HU_D04 with dexterous hand         | `HU_D04_01_with_hand.urdf`    | —               | `HU_D04_01_with_hand.usd`    |
 
 > **Note:** MuJoCo MJCF is only available for the base HU_D04 model. Gripper/hand variants have URDF and USD only.
+>
+> **Note:** HU_D03 has been discontinued and is no longer maintained. Please use HU_D04 instead.
 
 ## Directory structure
 

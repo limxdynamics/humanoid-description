@@ -8,12 +8,14 @@ LimX Dynamics 全尺寸人形机器人（HU_D03、HU_D04）的 URDF、MuJoCo MJC
 
 | 型号 | 描述 | URDF | MuJoCo MJCF | USD |
 | ---- | ---- | ---- | ----------- | --- |
-| **HU_D03** | 人形基础型号 | `HU_D03_03.urdf` | `HU_D03_03.xml` | `HU_D03_03.usd` |
+| **HU_D03**（已停止维护） | 人形基础型号 | `HU_D03_03.urdf` | `HU_D03_03.xml` | `HU_D03_03.usd` |
 | **HU_D04** | 带末端执行器选项的人形 | `HU_D04_01.urdf` | `HU_D04_01.xml` | `HU_D04_01.usd` |
 | **HU_D04 + 夹爪** | HU_D04 配夹爪 | `HU_D04_01_with_gripper.urdf` | — | `HU_D04_01_with_gripper.usd` |
 | **HU_D04 + 灵巧手** | HU_D04 配灵巧手 | `HU_D04_01_with_hand.urdf` | — | `HU_D04_01_with_hand.usd` |
 
 > **注意：** MuJoCo MJCF 仅为基础 HU_D04 型号提供。夹爪/灵巧手变体仅有 URDF 和 USD。
+>
+> **注意：** HU_D03 已停止维护，请改用 HU_D04。
 
 ## 目录结构
 

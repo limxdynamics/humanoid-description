@@ -325,7 +325,7 @@
                             <inertial pos="0.0 0.0 0.0" quat="1 0 0 0" mass="0.00001" diaginertia="0.00000000001 0.00000000001 0.00000000001"/>
                             <geom name="left_hand_contact" class="visual" size="0.003" type="sphere" rgba="1 0 0 1"/>
                           </body>
-                          <body name="left_hand_manip" pos="0 0 -0.058" quat="0.707107 0 0.707107 0">
+                          <body name="left_hand_manip" pos="0 0 -0.058" quat="0.707107, 0, 0.707107, 0">
                             <inertial pos="0.0 0.0 0.0" quat="1 0 0 0" mass="0.00001" diaginertia="0.00000000001 0.00000000001 0.00000000001"/>
                             <geom name="left_hand_manip" class="visual" size="0.003" type="sphere" rgba="1 0 0 1"/>
                           </body>
@@ -380,7 +380,7 @@
                             <inertial pos="0.0 0.0 0.0" quat="1 0 0 0" mass="0.00001" diaginertia="0.00000000001 0.00000000001 0.00000000001"/>
                             <geom name="right_hand_contact" class="visual" size="0.003" type="sphere" rgba="1 0 0 1"/>
                           </body>
-                          <body name="right_hand_manip" pos="0 0 -0.058" quat="0.707107 0 0.707107 0">
+                          <body name="right_hand_manip" pos="0 0 -0.058" quat="0.707107, 0, 0.707107, 0">
                             <inertial pos="0.0 0.0 0.0" quat="1 0 0 0" mass="0.00001" diaginertia="0.00000000001 0.00000000001 0.00000000001"/>
                             <geom name="right_hand_manip" class="visual" size="0.003" type="sphere" rgba="1 0 0 1"/>
                           </body>

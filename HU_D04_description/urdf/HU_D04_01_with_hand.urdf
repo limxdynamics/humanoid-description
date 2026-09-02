@@ -2361,7 +2361,7 @@
   </link>
   <joint
     name="left_thumb_tip_joint"
-    type="revolute">
+    type="fixed">
     <origin
       xyz="0 0.026528781163583 -0.00177344281307927"
       rpy="0.0667504507189052 0 3.14159265358979" />
@@ -2369,13 +2369,6 @@
       link="left_thumb_distal_link" />
     <child
       link="left_thumb_tip_link" />
-    <axis
-      xyz="-1 0 0" />
-    <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
   </joint>
   <link
     name="left_index_proximal_link">
@@ -2539,7 +2532,7 @@
   </link>
   <joint
     name="left_index_tip_joint"
-    type="revolute">
+    type="fixed">
     <origin
       xyz="0.011097 0 0.035739"
       rpy="0 0.48723 0" />
@@ -2547,13 +2540,6 @@
       link="left_index_distal_link" />
     <child
       link="left_index_tip_link" />
-    <axis
-      xyz="0 1 0" />
-    <limit
-      lower="1"
-      upper="1"
-      effort="1"
-      velocity="1" />
   </joint>
   <link
     name="left_middle_proximal_link">
@@ -2717,7 +2703,7 @@
   </link>
   <joint
     name="left_middle_tip_joint"
-    type="revolute">
+    type="fixed">
     <origin
       xyz="0.0073534 0 0.041703"
       rpy="0 0.34907 0" />
@@ -2725,13 +2711,6 @@
       link="left_middle_distal_link" />
     <child
       link="left_middle_tip_link" />
-    <axis
-      xyz="0 1 0" />
-    <limit
-      lower="1"
-      upper="1"
-      effort="1"
-      velocity="1" />
   </joint>
   <link
     name="left_ring_proximal_link">
@@ -2895,7 +2874,7 @@
   </link>
   <joint
     name="left_ring_tip_joint"
-    type="revolute">
+    type="fixed">
     <origin
       xyz="0.0071824 0 0.040734"
       rpy="0 0.34907 0" />
@@ -2903,13 +2882,6 @@
       link="left_ring_distal_link" />
     <child
       link="left_ring_tip_link" />
-    <axis
-      xyz="0 1 0" />
-    <limit
-      lower="1"
-      upper="1"
-      effort="1"
-      velocity="1" />
   </joint>
   <link
     name="left_pinky_proximal_link">
@@ -3073,7 +3045,7 @@
   </link>
   <joint
     name="left_pinky_tip_joint"
-    type="revolute">
+    type="fixed">
     <origin
       xyz="0.010221 0 0.032918"
       rpy="0 0.4756 0" />
@@ -3081,13 +3053,6 @@
       link="left_pinky_distal_link" />
     <child
       link="left_pinky_tip_link" />
-    <axis
-      xyz="0 1 0" />
-    <limit
-      lower="1"
-      upper="1"
-      effort="1"
-      velocity="1" />
   </joint>
 
   <!-- right hand -->
@@ -3352,7 +3317,7 @@
       offset="0" />
   </joint>
   <link
-    name="right_thumb_tip">
+    name="right_thumb_tip_link">
     <inertial>
       <origin
         xyz="0 -8.79922039356273E-05 -1.73472347597681E-18"
@@ -3373,7 +3338,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://HU_D04_description/meshes/HU_D04_01/right_thumb_tip.STL" />
+          filename="package://HU_D04_description/meshes/HU_D04_01/right_thumb_tip_link.STL" />
       </geometry>
       <material
         name="">
@@ -3387,27 +3352,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://HU_D04_description/meshes/HU_D04_01/right_thumb_tip.STL" />
+          filename="package://HU_D04_description/meshes/HU_D04_01/right_thumb_tip_link.STL" />
       </geometry>
     </collision> -->
   </link>
   <joint
-    name="right_thumb_tip"
-    type="revolute">
+    name="right_thumb_tip_joint"
+    type="fixed">
     <origin
       xyz="0 0.026529 -0.0017734"
       rpy="-0.06675 0 0" />
     <parent
       link="right_thumb_distal_link" />
     <child
-      link="right_thumb_tip" />
-    <axis
-      xyz="1 0 0" />
-    <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      link="right_thumb_tip_link" />
   </joint>
   <link
     name="right_index_proximal_link">
@@ -3530,7 +3488,7 @@
       offset="0" />
   </joint>
   <link
-    name="right_index_tip">
+    name="right_index_tip_link">
     <inertial>
       <origin
         xyz="0 6.93889390390723E-18 2.77555756156289E-17"
@@ -3551,7 +3509,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://HU_D04_description/meshes/HU_D04_01/right_index_tip.STL" />
+          filename="package://HU_D04_description/meshes/HU_D04_01/right_index_tip_link.STL" />
       </geometry>
       <material
         name="">
@@ -3565,27 +3523,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://HU_D04_description/meshes/HU_D04_01/right_index_tip.STL" />
+          filename="package://HU_D04_description/meshes/HU_D04_01/right_index_tip_link.STL" />
       </geometry>
     </collision> -->
   </link>
   <joint
     name="right_index_tip_joint"
-    type="revolute">
+    type="fixed">
     <origin
       xyz="0.011097 0 0.035739"
       rpy="0 0.4756 0" />
     <parent
       link="right_index_distal_link" />
     <child
-      link="right_index_tip" />
-    <axis
-      xyz="0 1 0" />
-    <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      link="right_index_tip_link" />
   </joint>
   <link
     name="right_middle_proximal_link">
@@ -3708,7 +3659,7 @@
       offset="0" />
   </joint>
   <link
-    name="right_middle_tip">
+    name="right_middle_tip_link">
     <inertial>
       <origin
         xyz="0 -3.46944695195361E-18 0"
@@ -3729,7 +3680,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://HU_D04_description/meshes/HU_D04_01/right_middle_tip.STL" />
+          filename="package://HU_D04_description/meshes/HU_D04_01/right_middle_tip_link.STL" />
       </geometry>
       <material
         name="">
@@ -3743,27 +3694,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://HU_D04_description/meshes/HU_D04_01/right_middle_tip.STL" />
+          filename="package://HU_D04_description/meshes/HU_D04_01/right_middle_tip_link.STL" />
       </geometry>
     </collision> -->
   </link>
   <joint
     name="right_middle_tip_joint"
-    type="revolute">
+    type="fixed">
     <origin
       xyz="0.012558 0 0.040442"
       rpy="0 0.4756 0" />
     <parent
       link="right_middle_distal_link" />
     <child
-      link="right_middle_tip" />
-    <axis
-      xyz="0 1 0" />
-    <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      link="right_middle_tip_link" />
   </joint>
   <link
     name="right_ring_proximal_link">
@@ -3886,7 +3830,7 @@
       offset="0" />
   </joint>
   <link
-    name="right_ring_tip">
+    name="right_ring_tip_link">
     <inertial>
       <origin
         xyz="0 0 0"
@@ -3907,7 +3851,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://HU_D04_description/meshes/HU_D04_01/right_ring_tip.STL" />
+          filename="package://HU_D04_description/meshes/HU_D04_01/right_ring_tip_link.STL" />
       </geometry>
       <material
         name="">
@@ -3921,27 +3865,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://HU_D04_description/meshes/HU_D04_01/right_ring_tip.STL" />
+          filename="package://HU_D04_description/meshes/HU_D04_01/right_ring_tip_link.STL" />
       </geometry>
     </collision> -->
   </link>
   <joint
     name="right_ring_tip_joint"
-    type="revolute">
+    type="fixed">
     <origin
       xyz="0.012266 0 0.039501"
       rpy="0 0.4756 0" />
     <parent
       link="right_ring_distal_link" />
     <child
-      link="right_ring_tip" />
-    <axis
-      xyz="0 1 0" />
-    <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      link="right_ring_tip_link" />
   </joint>
   <link
     name="right_pinky_proximal_link">
@@ -4064,7 +4001,7 @@
       offset="0" />
   </joint>
   <link
-    name="right_pinky_tip">
+    name="right_pinky_tip_link">
     <inertial>
       <origin
         xyz="3.46944695195361E-18 -5.20417042793042E-18 0"
@@ -4085,7 +4022,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://HU_D04_description/meshes/HU_D04_01/right_pinky_tip.STL" />
+          filename="package://HU_D04_description/meshes/HU_D04_01/right_pinky_tip_link.STL" />
       </geometry>
       <material
         name="">
@@ -4099,27 +4036,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://HU_D04_description/meshes/HU_D04_01/right_pinky_tip.STL" />
+          filename="package://HU_D04_description/meshes/HU_D04_01/right_pinky_tip_link.STL" />
       </geometry>
     </collision> -->
   </link>
   <joint
     name="right_pinky_tip_joint"
-    type="revolute">
+    type="fixed">
     <origin
       xyz="0.010221 0 0.032918"
       rpy="0 0.4756 0" />
     <parent
       link="right_pinky_distal_link" />
     <child
-      link="right_pinky_tip" />
-    <axis
-      xyz="0 1 0" />
-    <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      link="right_pinky_tip_link" />
   </joint>
 
   <!-- Camera -->

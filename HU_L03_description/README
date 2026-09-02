@@ -1,8 +1,0 @@
-# LimX Dynamics HU_L03 Description(URDF & MJCF & USD)
-## Overview
-This package includes a universal humanoid robot description (URDF & MJCF & USD) for the HU_L03, developed by LimX Dynamics.
-- **URDF**: HU_L03_description/urdf/HU_L03_01.urdf
-- **MJCF**: HU_L03_description/xml/HU_L03_01.xml
-- **USD**: HU_L03_description/usd/HU_L03_01.usd
-- **srdf**: HU_L03_description/urdf/HU_L03_01.srdf (The SRDF file contains joint specifications such as rotor inertia and gear ratio)
-- **meshes**: HU_L03_description/meshes/HU_L03_01

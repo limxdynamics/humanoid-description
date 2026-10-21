@@ -1,10 +1,5 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/images/hu_d04_turntable_dark.gif">
-  <img src="docs/images/hu_d04_turntable_light.gif" alt="LimX HU_D04 人形机器人 360° 旋转展示" height="280">
-</picture>
-
 # LimX 人形机器人描述文件
 
 **真实全尺寸人形机器人的开箱即用仿真模型 —— URDF、MuJoCo MJCF、USD 三种格式齐全。**
@@ -29,10 +24,10 @@
 
 | | 类型 | 型号 | 关节数 | 格式 |
 |:-:|---|---|:-:|---|
-| <img src="docs/images/hu_d04.png" height="120"> | **HU_D04** 全尺寸人形 | `HU_D04_01` | 31 | URDF · MJCF · USD |
-| <img src="docs/images/hu_d04_gripper.png" height="120"> | **HU_D04 + 夹爪** | `HU_D04_01_with_gripper` | 39<br><sub>35 个独立</sub> | URDF · USD |
-| <img src="docs/images/hu_d04_hand.png" height="120"> | **HU_D04 + 灵巧手** | `HU_D04_01_with_hand` | 53<br><sub>43 个独立</sub> | URDF · USD |
-| <img src="docs/images/hu_d03.png" height="120"> | HU_D03 *（已停止维护）* | `HU_D03_03` | 31 | URDF · MJCF · USD |
+| <img src="docs/images/hu_d04.png" height="200"> | **HU_D04** 全尺寸人形 | `HU_D04_01` | 31 | URDF · MJCF · USD |
+| <img src="docs/images/hu_d04_gripper.png" height="200"> | **HU_D04 + 夹爪** | `HU_D04_01_with_gripper` | 39<br><sub>35 个独立</sub> | URDF · USD |
+| <img src="docs/images/hu_d04_hand.png" height="200"> | **HU_D04 + 灵巧手** | `HU_D04_01_with_hand` | 53<br><sub>43 个独立</sub> | URDF · USD |
+| <img src="docs/images/hu_d03.png" height="200"> | HU_D03 *（已停止维护）* | `HU_D03_03` | 31 | URDF · MJCF · USD |
 
 > **注意：** 目前仅基础款 HU_D04 提供 MuJoCo MJCF。HU_D03 已停止维护，新项目请使用 HU_D04。
 

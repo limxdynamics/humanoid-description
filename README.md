@@ -1,10 +1,5 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/images/hu_d04_turntable_dark.gif">
-  <img src="docs/images/hu_d04_turntable_light.gif" alt="LimX HU_D04 humanoid robot rotating 360°" height="280">
-</picture>
-
 # LimX Humanoid Description
 
 **Simulation-ready models of a real, full-size humanoid robot — in URDF, MuJoCo MJCF and USD.**
@@ -29,10 +24,10 @@ Drop the LimX HU_D04 into ROS, MuJoCo or NVIDIA Isaac Sim in minutes, with real 
 
 | | Type | Model | Joints | Formats |
 |:-:|---|---|:-:|---|
-| <img src="docs/images/hu_d04.png" height="120"> | **HU_D04** full-size humanoid | `HU_D04_01` | 31 | URDF · MJCF · USD |
-| <img src="docs/images/hu_d04_gripper.png" height="120"> | **HU_D04 + Gripper** | `HU_D04_01_with_gripper` | 39<br><sub>35 independent</sub> | URDF · USD |
-| <img src="docs/images/hu_d04_hand.png" height="120"> | **HU_D04 + Dexterous Hand** | `HU_D04_01_with_hand` | 53<br><sub>43 independent</sub> | URDF · USD |
-| <img src="docs/images/hu_d03.png" height="120"> | HU_D03 *(discontinued)* | `HU_D03_03` | 31 | URDF · MJCF · USD |
+| <img src="docs/images/hu_d04.png" height="200"> | **HU_D04** full-size humanoid | `HU_D04_01` | 31 | URDF · MJCF · USD |
+| <img src="docs/images/hu_d04_gripper.png" height="200"> | **HU_D04 + Gripper** | `HU_D04_01_with_gripper` | 39<br><sub>35 independent</sub> | URDF · USD |
+| <img src="docs/images/hu_d04_hand.png" height="200"> | **HU_D04 + Dexterous Hand** | `HU_D04_01_with_hand` | 53<br><sub>43 independent</sub> | URDF · USD |
+| <img src="docs/images/hu_d03.png" height="200"> | HU_D03 *(discontinued)* | `HU_D03_03` | 31 | URDF · MJCF · USD |
 
 > **Note:** MuJoCo MJCF is currently provided for the base HU_D04 only. HU_D03 is no longer maintained — please use HU_D04 for new projects.
 

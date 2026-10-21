@@ -2,7 +2,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/images/hu_d04_turntable_dark.gif">
-  <img src="docs/images/hu_d04_turntable_light.gif" alt="LimX HU_D04 人形机器人 360° 旋转展示" height="420">
+  <img src="docs/images/hu_d04_turntable_light.gif" alt="LimX HU_D04 人形机器人 360° 旋转展示" height="280">
 </picture>
 
 # LimX 人形机器人描述文件
@@ -19,11 +19,22 @@
 
 [English](README.md) | **中文**
 
-[快速开始](#快速开始) · [模型一览](#模型一览) · [规格参数](#规格参数) · [生态](#生态) · [引用](#引用)
+[模型一览](#模型一览) · [快速开始](#快速开始) · [规格参数](#规格参数) · [生态](#生态) · [引用](#引用)
 
 </div>
 
 ---
+
+## 模型一览
+
+| | 类型 | 型号 | 关节数 | 格式 |
+|:-:|---|---|:-:|---|
+| <img src="docs/images/hu_d04.png" height="120"> | **HU_D04** 全尺寸人形 | `HU_D04_01` | 31 | URDF · MJCF · USD |
+| <img src="docs/images/hu_d04_gripper.png" height="120"> | **HU_D04 + 夹爪** | `HU_D04_01_with_gripper` | 39<br><sub>35 个独立</sub> | URDF · USD |
+| <img src="docs/images/hu_d04_hand.png" height="120"> | **HU_D04 + 灵巧手** | `HU_D04_01_with_hand` | 53<br><sub>43 个独立</sub> | URDF · USD |
+| <img src="docs/images/hu_d03.png" height="120"> | HU_D03 *（已停止维护）* | `HU_D03_03` | 31 | URDF · MJCF · USD |
+
+> **注意：** 目前仅基础款 HU_D04 提供 MuJoCo MJCF。HU_D03 已停止维护，新项目请使用 HU_D04。
 
 ## 亮点
 
@@ -98,17 +109,6 @@ rviz2   # Add → RobotModel，Fixed Frame 设为 base_link
 在 Isaac Sim 中直接打开 `HU_D04_description/usd/HU_D04_01.usd`（**File → Open**），或作为 reference 添加到场景中。顶层 USD 会自动组合 `usd/configuration/` 中的各层（`sensor → physics → base`），请保持该目录与其在同一位置。
 
 强化学习训练请参考 [humanoid-rl-isaaclab](https://github.com/limxdynamics/humanoid-rl-isaaclab)，可直接使用本仓库模型。
-
-## 模型一览
-
-| | 类型 | 型号 | 关节数 | 格式 |
-|:-:|---|---|:-:|---|
-| <img src="docs/images/hu_d04.png" width="110"> | **HU_D04** 全尺寸人形 | `HU_D04_01` | 31 | URDF · MJCF · USD |
-| <img src="docs/images/hu_d04_gripper.png" width="110"> | **HU_D04 + 夹爪** | `HU_D04_01_with_gripper` | 39<br><sub>35 个独立</sub> | URDF · USD |
-| <img src="docs/images/hu_d04_hand.png" width="110"> | **HU_D04 + 灵巧手** | `HU_D04_01_with_hand` | 53<br><sub>43 个独立</sub> | URDF · USD |
-| <img src="docs/images/hu_d03.png" width="110"> | HU_D03 *（已停止维护）* | `HU_D03_03` | 31 | URDF · MJCF · USD |
-
-> **注意：** 目前仅基础款 HU_D04 提供 MuJoCo MJCF。HU_D03 已停止维护，新项目请使用 HU_D04。
 
 ## 规格参数
 

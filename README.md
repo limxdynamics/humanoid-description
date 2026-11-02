@@ -1,35 +1,27 @@
+<p align="center">
+  <img src="docs/images/banner.png" alt="humanoid-description: the LimX Oli humanoid HU_D04 in its base, gripper and dexterous-hand variants" width="100%">
+</p>
+
 <div align="center">
 
-# LimX Humanoid Description
-
-**Simulation-ready models of a real, full-size humanoid robot — in URDF, MuJoCo MJCF and USD.**
-
-Drop the LimX HU_D04 into ROS, MuJoCo or NVIDIA Isaac Sim in minutes, with real actuator parameters and the true parallel-linkage ankles.
+**English** | [中文](README_cn.md)
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![ROS](https://img.shields.io/badge/ROS-1%20%7C%202-22314E?logo=ros)](#ros-1--ros-2)
 [![MuJoCo](https://img.shields.io/badge/MuJoCo-MJCF-0A7BBB)](#mujoco-30-seconds)
 [![Isaac Sim](https://img.shields.io/badge/Isaac%20Sim-USD-76B900?logo=nvidia&logoColor=white)](#isaac-sim--isaac-lab)
-[![GitHub stars](https://img.shields.io/github/stars/limxdynamics/humanoid-description?style=social)](https://github.com/limxdynamics/humanoid-description/stargazers)
 
-**English** | [中文](README_cn.md)
+# LimX Humanoid Description
+
+**Simulation-ready models of a real, full-size humanoid robot — in URDF, MuJoCo MJCF and USD.**
+
+Drop the LimX Oli humanoid (HU_D04) into ROS, MuJoCo or NVIDIA Isaac Sim in minutes, with real actuator parameters and the true parallel-linkage ankles.
 
 [Models](#robot-models) · [Quick Start](#quick-start) · [Specs](#specifications) · [Ecosystem](#ecosystem) · [Citation](#citation)
 
 </div>
 
 ---
-
-## Robot models
-
-| | Type | Model | Joints | Formats |
-|:-:|---|---|:-:|---|
-| <img src="docs/images/hu_d04.png" width="230"> | **HU_D04** full-size humanoid | `HU_D04_01` | 31 | URDF · MJCF · USD |
-| <img src="docs/images/hu_d04_gripper.png" width="230"> | **HU_D04 + Gripper** | `HU_D04_01_with_gripper` | 39<br><sub>35 independent</sub> | URDF · USD |
-| <img src="docs/images/hu_d04_hand.png" width="230"> | **HU_D04 + Dexterous Hand** | `HU_D04_01_with_hand` | 53<br><sub>43 independent</sub> | URDF · USD |
-| <img src="docs/images/hu_d03.png" width="230"> | HU_D03 *(discontinued)* | `HU_D03_03` | 31 | URDF · MJCF · USD |
-
-> **Note:** MuJoCo MJCF is currently provided for the base HU_D04 only. HU_D03 is no longer maintained — please use HU_D04 for new projects.
 
 ## Highlights
 
@@ -39,6 +31,17 @@ Drop the LimX HU_D04 into ROS, MuJoCo or NVIDIA Isaac Sim in minutes, with real 
 - **Real actuator data** — the SRDF lists rotor inertia and gear ratio for every joint, which matters for accurate sim-to-real transfer.
 - **Sim-ready out of the box** — MJCF ships with 31 torque actuators, an IMU (orientation, gyro, accelerometer) and 65 sensors; USD is layered into base / physics / sensor for Isaac Sim.
 - **Commercial-friendly** — Apache 2.0.
+
+## Robot models
+
+| | Type | Model | Joints | Formats |
+|:-:|---|---|:-:|---|
+| <img src="docs/images/hu_d04.png" width="260"> | **HU_D04** full-size humanoid | `HU_D04_01` | 31 | URDF · MJCF · USD |
+| <img src="docs/images/hu_d04_gripper.png" width="260"> | **HU_D04 + Gripper** | `HU_D04_01_with_gripper` | 39<br><sub>35 independent</sub> | URDF · USD |
+| <img src="docs/images/hu_d04_hand.png" width="260"> | **HU_D04 + Dexterous Hand** | `HU_D04_01_with_hand` | 53<br><sub>43 independent</sub> | URDF · USD |
+| <img src="docs/images/hu_d03.png" width="260"> | HU_D03 *(discontinued)* | `HU_D03_03` | 31 | URDF · MJCF · USD |
+
+> **Note:** MuJoCo MJCF is currently provided for the base HU_D04 only. HU_D03 is no longer maintained — please use HU_D04 for new projects.
 
 ## Quick Start
 
@@ -111,7 +114,7 @@ Values below are read from the HU_D04 model files.
 
 | | HU_D04 |
 | --- | --- |
-| Height (model) | ≈ 1.66 m |
+| Height (model) | ≈ 1.65 m |
 | Mass (URDF, base model) | ≈ 52.5 kg |
 | Legs | 2 × 6 DoF (hip pitch / roll / yaw, knee, ankle pitch / roll) |
 | Waist | 3 DoF (yaw / roll / pitch) |
@@ -168,20 +171,22 @@ humanoid-description/
 
 These models are the foundation of LimX's open humanoid stack — train a policy, verify it in a second simulator, then deploy it:
 
-```mermaid
-flowchart LR
-    D["humanoid-description<br/>(this repo)"] --> I["humanoid-rl-isaaclab<br/>RL training"]
-    D --> M["humanoid-mujoco-sim<br/>Sim2Sim validation"]
-    D --> R["humanoid-rl-deploy-ros / ros2<br/>Deployment"]
-    I --> M --> R
-```
-
 | Repository | What it does |
 | --- | --- |
 | [humanoid-rl-isaaclab](https://github.com/limxdynamics/humanoid-rl-isaaclab) | Train locomotion policies in Isaac Lab |
 | [humanoid-mujoco-sim](https://github.com/limxdynamics/humanoid-mujoco-sim) | MuJoCo simulator for the humanoid |
 | [humanoid-rl-deploy-ros](https://github.com/limxdynamics/humanoid-rl-deploy-ros) | Deploy RL policies with ROS 1 |
 | [humanoid-rl-deploy-ros2](https://github.com/limxdynamics/humanoid-rl-deploy-ros2) | Deploy RL policies with ROS 2 |
+
+## Verification
+
+Checked on 2026-11-02 with MuJoCo 3.x and Python:
+
+- All four MJCF files load. `HU_D04_01.xml` has 31 actuators, 65 sensors and 6 equality constraints (the ankle and waist linkages); `HU_D04_01_vis.xml` has 31 joints and no actuators.
+- Every mesh referenced by the three HU_D04 URDFs and the HU_D03 URDF exists under `meshes/`; four `../meshes/` paths in `HU_D04_01_with_hand.urdf` were changed to `package://` so they also resolve in ROS.
+- Joint counts in the table above (31 / 39 with 4 mimic / 53 with 10 mimic), the joint limits, torques, velocities and gear ratios match the URDF and SRDF files. Height is measured from the MJCF model.
+- `HU_D04_01_with_hand.urdf` does not load in MuJoCo's URDF importer as is: the ten `*_tip_link` frames carry a 1 g mass with an inertia of 1.6e-15 kg·m², below MuJoCo's minimum. ROS and Isaac Sim are not affected by this check.
+- ROS builds and Isaac Sim loading were not run in this pass.
 
 ## Citation
 

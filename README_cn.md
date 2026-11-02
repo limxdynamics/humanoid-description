@@ -1,35 +1,27 @@
+<p align="center">
+  <img src="docs/images/banner.png" alt="humanoid-description：LimX Oli 人形机器人 HU_D04 的基础款、夹爪款和灵巧手款" width="100%">
+</p>
+
 <div align="center">
 
-# LimX 人形机器人描述文件
-
-**真实全尺寸人形机器人的开箱即用仿真模型 —— URDF、MuJoCo MJCF、USD 三种格式齐全。**
-
-几分钟内把逐际动力 HU_D04 接入 ROS、MuJoCo 或 NVIDIA Isaac Sim，自带真实执行器参数与并联踝关节结构。
+[English](README.md) | **中文**
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![ROS](https://img.shields.io/badge/ROS-1%20%7C%202-22314E?logo=ros)](#ros-1--ros-2)
 [![MuJoCo](https://img.shields.io/badge/MuJoCo-MJCF-0A7BBB)](#mujoco30-秒上手)
 [![Isaac Sim](https://img.shields.io/badge/Isaac%20Sim-USD-76B900?logo=nvidia&logoColor=white)](#isaac-sim--isaac-lab)
-[![GitHub stars](https://img.shields.io/github/stars/limxdynamics/humanoid-description?style=social)](https://github.com/limxdynamics/humanoid-description/stargazers)
 
-[English](README.md) | **中文**
+# LimX 人形机器人描述文件
+
+**真实全尺寸人形机器人的开箱即用仿真模型 —— URDF、MuJoCo MJCF、USD 三种格式齐全。**
+
+几分钟内把逐际动力 Oli 人形机器人（HU_D04）接入 ROS、MuJoCo 或 NVIDIA Isaac Sim，自带真实执行器参数与并联踝关节结构。
 
 [模型一览](#模型一览) · [快速开始](#快速开始) · [规格参数](#规格参数) · [生态](#生态) · [引用](#引用)
 
 </div>
 
 ---
-
-## 模型一览
-
-| | 类型 | 型号 | 关节数 | 格式 |
-|:-:|---|---|:-:|---|
-| <img src="docs/images/hu_d04.png" width="230"> | **HU_D04** 全尺寸人形 | `HU_D04_01` | 31 | URDF · MJCF · USD |
-| <img src="docs/images/hu_d04_gripper.png" width="230"> | **HU_D04 + 夹爪** | `HU_D04_01_with_gripper` | 39<br><sub>35 个独立</sub> | URDF · USD |
-| <img src="docs/images/hu_d04_hand.png" width="230"> | **HU_D04 + 灵巧手** | `HU_D04_01_with_hand` | 53<br><sub>43 个独立</sub> | URDF · USD |
-| <img src="docs/images/hu_d03.png" width="230"> | HU_D03 *（已停止维护）* | `HU_D03_03` | 31 | URDF · MJCF · USD |
-
-> **注意：** 目前仅基础款 HU_D04 提供 MuJoCo MJCF。HU_D03 已停止维护，新项目请使用 HU_D04。
 
 ## 亮点
 
@@ -39,6 +31,17 @@
 - **真实执行器数据** —— SRDF 给出每个关节的转子惯量和减速比，对 sim-to-real 迁移至关重要。
 - **开箱即仿** —— MJCF 自带 31 个力矩执行器、IMU（姿态 / 陀螺仪 / 加速度计）共 65 个传感器；USD 按 base / physics / sensor 分层，直接用于 Isaac Sim。
 - **可商用** —— Apache 2.0 许可证。
+
+## 模型一览
+
+| | 类型 | 型号 | 关节数 | 格式 |
+|:-:|---|---|:-:|---|
+| <img src="docs/images/hu_d04.png" width="260"> | **HU_D04** 全尺寸人形 | `HU_D04_01` | 31 | URDF · MJCF · USD |
+| <img src="docs/images/hu_d04_gripper.png" width="260"> | **HU_D04 + 夹爪** | `HU_D04_01_with_gripper` | 39<br><sub>35 个独立</sub> | URDF · USD |
+| <img src="docs/images/hu_d04_hand.png" width="260"> | **HU_D04 + 灵巧手** | `HU_D04_01_with_hand` | 53<br><sub>43 个独立</sub> | URDF · USD |
+| <img src="docs/images/hu_d03.png" width="260"> | HU_D03 *（已停止维护）* | `HU_D03_03` | 31 | URDF · MJCF · USD |
+
+> **注意：** 目前仅基础款 HU_D04 提供 MuJoCo MJCF。HU_D03 已停止维护，新项目请使用 HU_D04。
 
 ## 快速开始
 
@@ -111,7 +114,7 @@ rviz2   # Add → RobotModel，Fixed Frame 设为 base_link
 
 | | HU_D04 |
 | --- | --- |
-| 身高（模型） | ≈ 1.66 m |
+| 身高（模型） | ≈ 1.65 m |
 | 质量（URDF，基础款） | ≈ 52.5 kg |
 | 腿部 | 2 × 6 自由度（髋 pitch / roll / yaw、膝、踝 pitch / roll） |
 | 腰部 | 3 自由度（yaw / roll / pitch） |
@@ -168,20 +171,22 @@ humanoid-description/
 
 这些模型是逐际动力开源人形机器人工具链的基础 —— 训练策略、在第二个仿真器中验证、再部署到真机：
 
-```mermaid
-flowchart LR
-    D["humanoid-description<br/>（本仓库）"] --> I["humanoid-rl-isaaclab<br/>强化学习训练"]
-    D --> M["humanoid-mujoco-sim<br/>Sim2Sim 验证"]
-    D --> R["humanoid-rl-deploy-ros / ros2<br/>部署"]
-    I --> M --> R
-```
-
 | 仓库 | 用途 |
 | --- | --- |
 | [humanoid-rl-isaaclab](https://github.com/limxdynamics/humanoid-rl-isaaclab) | 在 Isaac Lab 中训练运动策略 |
 | [humanoid-mujoco-sim](https://github.com/limxdynamics/humanoid-mujoco-sim) | 人形机器人 MuJoCo 仿真器 |
 | [humanoid-rl-deploy-ros](https://github.com/limxdynamics/humanoid-rl-deploy-ros) | 基于 ROS 1 部署 RL 策略 |
 | [humanoid-rl-deploy-ros2](https://github.com/limxdynamics/humanoid-rl-deploy-ros2) | 基于 ROS 2 部署 RL 策略 |
+
+## 验证
+
+2026-11-02 使用 MuJoCo 3.x 与 Python 检查：
+
+- 四个 MJCF 文件均可加载。`HU_D04_01.xml` 含 31 个执行器、65 个传感器和 6 个等式约束（踝关节与腰部连杆）；`HU_D04_01_vis.xml` 含 31 个关节，无执行器。
+- 三个 HU_D04 URDF 和 HU_D03 URDF 引用的网格文件在 `meshes/` 下都存在；`HU_D04_01_with_hand.urdf` 中四处 `../meshes/` 相对路径已改为 `package://`，在 ROS 中也能找到。
+- 上表的关节数（31 / 39 含 4 个 mimic / 53 含 10 个 mimic）以及关节限位、力矩、速度和减速比与 URDF、SRDF 一致；身高按 MJCF 模型测得。
+- `HU_D04_01_with_hand.urdf` 目前无法直接用 MuJoCo 的 URDF 导入器加载：10 个 `*_tip_link` 坐标系质量为 1 g、惯量为 1.6e-15 kg·m²，低于 MuJoCo 的下限。此项检查不涉及 ROS 和 Isaac Sim。
+- 本次未运行 ROS 编译和 Isaac Sim 加载。
 
 ## 引用
 

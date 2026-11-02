@@ -2073,7 +2073,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/HU_D04_01/hand_transition_link.STL" />
+          filename="package://HU_D04_description/meshes/HU_D04_01/hand_transition_link.STL" />
       </geometry>
       <material
         name="">
@@ -2087,7 +2087,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/HU_D04_01/hand_transition_link.STL" />
+          filename="package://HU_D04_description/meshes/HU_D04_01/hand_transition_link.STL" />
       </geometry>
     </collision> -->
   </link>
@@ -3069,7 +3069,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/HU_D04_01/hand_transition_link.STL" />
+          filename="package://HU_D04_description/meshes/HU_D04_01/hand_transition_link.STL" />
       </geometry>
       <material
         name="">
@@ -3083,7 +3083,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/HU_D04_01/hand_transition_link.STL" />
+          filename="package://HU_D04_description/meshes/HU_D04_01/hand_transition_link.STL" />
       </geometry>
     </collision> -->
   </link>

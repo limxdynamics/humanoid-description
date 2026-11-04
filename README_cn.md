@@ -13,6 +13,8 @@
 
 # LimX 人形机器人描述文件
 
+> **Oli 人形机器人开源生态的一部分。** 上手路线和其他 Oli 仓库：[Oli 快速上手](https://github.com/limxdynamics/limxdynamics/blob/main/doc/quickstart_cn.md#oli)。
+
 **真实全尺寸人形机器人的开箱即用仿真模型 —— URDF、MuJoCo MJCF、USD 三种格式齐全。**
 
 几分钟内把逐际动力 Oli 人形机器人（HU_D04）接入 ROS、MuJoCo 或 NVIDIA Isaac Sim，自带真实执行器参数与并联踝关节结构。

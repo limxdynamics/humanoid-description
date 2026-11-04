@@ -13,6 +13,8 @@
 
 # LimX Humanoid Description
 
+> **Part of the Oli humanoid open-source ecosystem.** Where to start and the other Oli repositories: [Oli quick start](https://github.com/limxdynamics/limxdynamics/blob/main/doc/quickstart.md#oli).
+
 **Simulation-ready models of a real, full-size humanoid robot — in URDF, MuJoCo MJCF and USD.**
 
 Drop the LimX Oli humanoid (HU_D04) into ROS, MuJoCo or NVIDIA Isaac Sim in minutes, with real actuator parameters and the true parallel-linkage ankles.
